@@ -1,6 +1,30 @@
 /* For Desktop */
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Orbitron);
 
+/* Javascript Stlyes*/
+#clock{
+    font-family: 'Orbitron', sans-serif;
+    color: black;
+    font-size: 48px;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+#Icon{
+    padding: 0.1%;
+    height: 0.1%;
+    text-align: center;
+}
+
+#greeting{
+    text-align: center;
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* HTML Styles */
 .header {
     background-color: #add8e6;
     padding: 0px;
