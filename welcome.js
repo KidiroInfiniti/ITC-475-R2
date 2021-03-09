@@ -6,7 +6,7 @@ function currentTime() {
     hour = updateTime(hour);
     min = updateTime(min);
     sec = updateTime(sec);
-    document.getElementById("clock").innerText = hour + " : " + min + " : " + sec;
+    document.getElementById("clock").innerText = hour + " : " + min;
       var t = setTimeout(function(){ currentTime() }, 1000);
 }
   function updateTime(k) {

@@ -24,7 +24,105 @@
     font-family: 'Orbitron', sans-serif;
 }
 
+form
+{
+    width: 95%;
+    margin: auto;
+}
+
+fieldset
+{
+    padding: 2%;
+    margin-bottom: 5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.formRow
+{
+    padding: 1%;
+}
+
+legend
+{
+    background-color: peachpuff;
+    color: #414141;
+    font-size: 120%;
+    font-weight: bolder;
+    padding: 1.5%;
+    padding-left: 10%;
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+label
+{
+    padding-right: 1%;
+    font-size: 92%;
+}
+
+.formRow input
+{
+    width: 90%;
+    height: 30px;
+    display: block;
+}
+
+#ActivitySelector
+{
+    padding: 1%;
+}
+
+#destination-selector
+{
+    width: 65%;
+    height: 30px;
+}
+
+#viewAct
+{
+    width: 25%;
+    height: 30px;
+}
+
+#actList
+{
+    padding-top: 1%;
+    font-size: 92%;
+    width: 90%;
+}
+
+#buttons
+{
+    padding-left: 3%;
+    padding-bottom: 15%;
+  
+}
+
+#submit, #clear
+{
+    margin-bottom: 1%;
+    margin-right: 2%;
+    width: 20%;
+    height: 45px;
+    background-color: lightgray;
+}
+
+#validation
+{
+    padding-left: 3.2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 /* HTML Styles */
+#pagecontainer{
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap{
+    padding-bottom: 6.5rem;
+}
+
 .header {
     background-color: #add8e6;
     padding: 0px;
@@ -58,7 +156,7 @@
     transform: translateY(-5px);
 }
 
-.travel_packages {
+#travel_packages {
     text-align: left;
     margin-left: 15px;
     color: black;
@@ -138,7 +236,7 @@ div.boxes {
     width: 300px;
     padding: 10px;
     border: 1px solid black;
-    margin: 1% 0% 1% 1%;
+    margin: 1% 1% 1% 1%;
     break-inside: avoid;
 }
 
@@ -166,10 +264,12 @@ body {
     background-color: white;
 }
 
-footer {
-    padding: 10px 50px 50px 50px;
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 6.5rem;
     background-color: black;
-    margin: 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -189,5 +289,53 @@ footer {
     }
     .boxes {
         justify-content: center;
+    }
+
+    form
+    {
+        width: 80%;
+        margin-left: 3%;
+    }
+
+    .formRow input
+    {
+    width: 75%;
+    height: 20px;
+    display: block;
+    }
+
+    legend
+    {
+        padding: 1.5%;
+        width: 75%;
+    }
+
+    #destination-selector
+    {
+    width: 55%;
+    height: 20px;
+    }
+
+    #viewAct
+    {
+    width: 20%;
+    height: 20px;
+    }
+
+    #actList
+    {
+    padding-top: 1%;
+    font-size: 92%;
+    width: 75%;
+    }
+
+    #submit, #clear
+    {
+    margin-bottom: 3%;
+    margin-left: 0.5%;
+    margin-right: 2%;
+    width: 12%;
+    height: 35px;
+    background-color: lightblue;
     }
 }

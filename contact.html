@@ -10,7 +10,8 @@
 </head>
 
 <body style="margin: 0;">
-    
+    <div id="pagecontainer">
+        <div id="content-wrap">
     <!--Logo-->
     <header class="header">
         <div class="logo">
@@ -30,18 +31,91 @@
             </ul>
         </nav>
     </header>
-    <div id="root"></div>
-    <h1 class="travel_packages">Contact an Agent</h1>
+    <h1 id="travel_packages">Contact an Agent</h1>
     <p class="packages">
-        We would love to know more about your travel plans. Please fill out this contact form to<br>get in toucwith a travel agent.
-    </p>
+        We would love to know more about your travel plans. Please fill out this contact form to<br>get in touch with a travel agent.
+    </div>
+ 
+    <form id="contact">
+        <fieldset>
+        <legend><strong>Contact Information</strong></legend> 
+
+           <div class="formRow">
+               <label>First Name:</label>	
+                   <input name="first name" id="fname" type="text"/>
+               </div>
+               </br>
+           <div class="formRow">
+               <label>Last Name:</label>	
+                   <input name="last name" id="lname" type="text"/>
+               </div>
+               </br>
+           <div class="formRow">
+               <label>Email:</label>	
+                   <input name="email" id="email" type="email"/>
+               </div>	
+               </br>	
+           <div class="formRow">
+               <label>Phone Number (no spaces or hyphens):</label>	
+                   <input name="phone" id="phone" type="tel" 
+                   placeholder="##########"/>
+               </div>		
+               </br>
+        </fieldset>
+             </br>
+        <fieldset>
+        <legend><strong>Travel Information</strong></legend>
+
+           <div class="formRow">
+               <label>Number of Adults Traveling:</label>
+               <input name="adults" id="adults" type="number" min="1">
+               </div>
+               </br>
+           <div class="formRow">
+               <label>Number of Children Traveling:</label>
+               <input name="children" id="children" type="number" min="0">
+               </div>
+               </br>
+           <div class="formRow">
+               <label>Start Date of Travel:</label>
+               <input name="startdate" id="startdate" type="date" min="2021-01-01" max="2023-12-31">
+               </div>
+                </br> 
+               <!--Activity Selector-->
+               <div id="ActivitySelector">
+                    <label for="destinations">Select your destination:</label>
+                    </br>
+                    <select name="destination select" id="destination-selector">
+                      <option value="selectOne">-----</option>
+                      <option value="maldives">Maldives</option>
+                      <option value="mexico">Cancun, Mexico</option>
+                      <option value="nz">New Zealand</option>
+                      <option value="italy">Venice, Italy</option>
+                    </select>
+                    <input id="viewAct" type="button" onclick="getOptions()" 
+                    value="View Activities" style="background-color:lightblue;">
+                  <div id="actList"></div>
+                </div>
+        </fieldset>
+       </form>
+
+       <div id="buttons">
+        <input id="submit" type="submit" value="Submit" onclick="validate()" />
+        <input id="clear" type="reset" value="Clear" onclick="clearForm()" />
+        </div> 
+
+   <div id="validation"></div>
+   
+    <script src="activities.js"></script>
+    <script src="contact.js"></script>
     <!--Footer-->
-    <footer>
+    <footer id="footer">
         <p class="copyright">Copyright Protected. All rights reserved</p>
-        <p> </p>
         <p class="mega">MEGA TRAVELS</p>
         <p class="email">mega@travels.com</p>
     </footer>
+
+</div>
 </body>
 
 </html>
